@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --black : #1C1C0D;
+    --white: #F5F5E5;
+    --color3: #FCFCF7;
+    --color4:#E8E8CF;
+    --colorG:#9E9E47;
+    --colorBackG: #E5E8EB;
+
+
+}
+body{
+    background-color: var(--colorBackG);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;     
+}
+.nav-logo,.nav-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 32px;
+    gap: 20px;
+    
+
+}
+.nav-profile img {
+    border-radius: 50%;
+}
+nav{
+    border-bottom: 1px solid var(--black);
+}
+
+.first-container{
+  
+    margin: 0 100px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 36px;
+}
+.item-style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:6px 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    background-color: white;
+    width: 80%;
+
+}
+.textspan{
+    margin-right: 80px;
+}
+
+.btn-delete{
+
+color:red;
+border-radius:50%;
+border:none;
+font-size: 10px;
+background-color: palevioletred;
+}
+
+input{
+    border: 1px solid var(--color4);
+    padding: 8px 32px;
+    width: 40%;
+    border-radius: 8px;
+    background-color: var(--colorBackG);
+    
+}
+input::placeholder {
+  color: var(--colorG); 
+}
+button{
+    padding: 12px 12px;
+    border: none;
+    border-radius: 50%;
+    background-color:var(--white);
+    color:var(--black);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+    .item-style,.edit-btn{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .first-container{
+  
+    margin: 0 50px;
+    padding: 100px 0px;
+}
+input{
+    border: 1px solid var(--color4);
+    padding: 8px 32px;
+    width: 80%;
+    border-radius: 8px;
+    background-color: var(--colorBackG);
+    
+}
+}
+
+
+
